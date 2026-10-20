@@ -35,7 +35,7 @@ Outside of work, I help small businesses with infrastructure projects like serve
 
 ## Certifications
 
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3ceb46e5-c3bc-4fba-a3a4-dae2ec850cf8" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3ceb46e5-c3bc-4fba-a3a4-dae2ec850cf8" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
 
 - **CompTIA Security+**, October 2026
 
@@ -45,4 +45,4 @@ Hands-on lab writeups covering vulnerability scanning and remediation, detection
 
 ## Get in touch
 
-I'm currently open to cybersecurity roles. Feel free to connect on [LinkedIn](https://www.linkedin.com/in/YOUR-PROFILE) or check out my work on [GitHub](https://github.com/mhildom).
+I'm currently open to cybersecurity roles. Feel free to connect on [LinkedIn](https://www.linkedin.com/in/matthew-hildom/) or check out my work on [GitHub](https://github.com/mhildom).
