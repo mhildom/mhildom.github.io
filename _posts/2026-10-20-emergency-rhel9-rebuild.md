@@ -54,8 +54,6 @@ The platform has companion mobile apps for offline data collection. On the new s
 
 The certificate chain needed to change, but no single chain configuration satisfied both platforms' trust behavior out of the box. Getting both working meant customizing the server's TLS configuration as well as the chain it presented.
 
-<!-- TODO: add the specific symptoms per platform (error messages, what the logs showed), how you diagnosed it (openssl s_client, SSL Labs, app logs), and what the final change was. This is the most technical part of the post, so a sanitized config snippet or terminal output would make it much stronger. -->
-
 **Lesson:** test TLS changes against every client you support, not just a browser. Mobile platforms handle chain building and trust differently.
 
 ## Problem 2: The authentication migration that wasn't what it looked like
@@ -76,8 +74,6 @@ I had never worked in Entra before this. The fix:
 4. Reconfigured the platform's authentication to read the new claim
 
 After that, every user signed in to the same account and data they had before.
-
-<!-- TODO: add a screenshot (redacted) of the claims mapping or the token claims before and after. -->
 
 **Lesson:** in any identity migration, find out which attribute the application uses as the unique user key *before* switching providers.
 
