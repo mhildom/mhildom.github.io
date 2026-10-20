@@ -1,6 +1,6 @@
 ---
 title: "Emergency Rebuild: Moving a HIPAA Research Platform Off RHEL 7 in Under Three Weeks"
-date: 2026-10-20 15:00:00 -0400
+date: 2026-10-20 14:00:00 -0400
 categories: [Case Studies, Vulnerability Response]
 tags: [rhel, hardening, hipaa, entra-id, oidc, tls, incident-response, linux]
 ---
