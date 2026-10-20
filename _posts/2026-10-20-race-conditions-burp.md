@@ -9,7 +9,7 @@ image:
 ---
 
 > Lab work from a TryHackMe web application security module, done in a deliberately vulnerable training environment. Room answers and flags are left out.
-> To see more where I got this from, and to give it a try yourself, you can go to: [TryHackMe | Race Conditions Attacks](https://tryhackme.com/room/raceconditionsattacks "Visit TryHackMe")
+> To see where I got this from, and to give it a try yourself, you can go to: [TryHackMe | Race Conditions Attacks](https://tryhackme.com/room/raceconditionsattacks "Visit TryHackMe")
 {: .prompt-info }
 
 ## TL;DR
