@@ -11,6 +11,10 @@ tags: [sql-injection, sqli, union-based, blind-sqli, web-app, tryhackme]
 > To see where I got this from, and to give it a try yourself, you can go to: [TryHackMe | SQL Injection](https://tryhackme.com/room/sqlinjectionlm "Visit TryHackMe")
 {: .prompt-info }
 
+## TL;DR
+
+A database-backed app trusts your input enough to run it as part of its own queries, and that's the door into the forbidden land. With the lights on, a `UNION` injection maps the database through `information_schema` and dumps what's inside back to you. When the lights go out though, with no output and no errors, you must feel your way forward with boolean and time-based inference, reading answers from a `SLEEP()` delay one character at a time until you find the treasure you are looking for.
+
 ## What SQL injection is
 
 SQL is a common database backend, so SQL injection (SQLi) targets that layer to
@@ -80,7 +84,7 @@ SELECT * FROM users WHERE username='%username%' AND password='%password%' LIMIT 
 with a username of `' OR 1=1;--` becomes:
 
 ```sql
-SELECT * FROM users WHERE username='' AND password='' OR 1=1;
+SELECT * FROM users WHERE username='' OR 1=1;--' AND password='';
 ```
 
 The `OR 1=1` makes the WHERE always true and `--` comments out the rest, so the
