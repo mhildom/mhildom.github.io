@@ -8,7 +8,7 @@ tags: [sql-injection, sqli, union-based, blind-sqli, web-app, tryhackme]
 > Lab work from a TryHackMe web application security module, done against a
 > deliberately vulnerable training app. Room-specific database names, table
 > names, and recovered values are genericized; room answers are left out. 
-> To see more where I got this from, and to give it a try yourself, you can go to: [TryHackMe | SQL Injection](https://tryhackme.com/room/sqlinjectionlm "Visit TryHackMe")
+> To see where I got this from, and to give it a try yourself, you can go to: [TryHackMe | SQL Injection](https://tryhackme.com/room/sqlinjectionlm "Visit TryHackMe")
 {: .prompt-info }
 
 ## What SQL injection is
