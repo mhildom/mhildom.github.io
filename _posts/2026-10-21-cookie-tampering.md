@@ -3,6 +3,7 @@ title: "Cookie Tampering: Plaintext, Hashed, and Base64 Cookies"
 date: 2026-10-21 13:00:00 -0400
 categories: [Labs, Web Security]
 tags: [cookie-tampering, authentication-bypass, privilege-escalation, hash-cracking, base64, web-app, tryhackme]
+description: "Flipping an admin flag, cracking a hashed cookie, and forging a base64 one to escalate from user to admin."
 ---
 
 > Lab work from a TryHackMe web application security module, done against a
