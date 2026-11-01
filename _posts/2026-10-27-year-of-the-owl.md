@@ -281,7 +281,7 @@ _Not much — I couldn't even run `systeminfo`, so this is a low-privilege accou
 
 Traditional privesc paths include hijacking a more privileged service or scheduled task, or finding stored credentials. But before poking at services and tasks, the lowest-impact first move is just to look for files that shouldn't be readable — hidden or forgotten files. Searching with `ls -hidden` turned up nothing new, and I didn't have permissions to read into the Administrator or Public user folders. The root of `C:\` had no obvious "credentials" file either.
 
-One place worth checking on any box: the **Recycle Bin**. Users delete sensitive files and assume they're gone.
+One place worth checking on any box: the **Recycle Bin**. Users delete sensitive files and assume they're gone. I have actually experienced this issue before. In a previous role I held, a customer had stored credit card information, bank information, invoice numbers, and more in text documents on their desktop. They would do this as a sort of "sticky note" when working, and then delete it when they were done with it. An attacker who impersonated Dell support got them to allow remote access. The customer realized it was not actual support, disconnected the session, and contacted us. During my analysis I found that they had these files sitting around, creating a massive blast radius for them to work through with their bank and customers. So checking these locations really does payoff.
 
 ![The Recycle Bin containing two hidden SID directories](/assets/img/posts/thm-year-of-the-owl/recyclebin-two-sids.png)
 _Two hidden directories, named after Windows SIDs (the Recycle Bin itself is a hidden system folder, so its contents are hidden too)._
